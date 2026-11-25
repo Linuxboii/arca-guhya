@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arca-guhya"
+version = "1.0.0"
+description = "Zero-dependency secrets scanner with entropy detection, allowlists, baselines and SARIF output."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Sushanth Kasturi" }]
+requires-python = ">=3.10"
+keywords = ["security", "secrets", "scanner", "sarif", "devsecops", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Console",
+    "Topic :: Security",
+]
+
+[project.scripts]
+arca-guhya = "arca_guhya.cli:main"
+
+[tool.setuptools]
+packages = ["arca_guhya"]

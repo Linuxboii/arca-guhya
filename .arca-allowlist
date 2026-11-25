@@ -1,0 +1,4 @@
+# Test fixtures intentionally contain fake credentials.
+path:tests/*
+# Sample scanner output in the README shows a private key header line.
+fingerprint:9bda68edaaac41fd
